@@ -15,7 +15,7 @@ Group:		Base/Kernel
 Source0:	http://www.kati.fi/%{_orig_name}/%{_orig_name}-%{version}.tar.gz
 # Source0-md5:	a63cdb34bf50676f232192b570dd7c37
 URL:		http://www.kati.fi/viahss/
-%{!?_without_dist_kernel:BuildRequires:         kernel-headers}
+%{!?_without_dist_kernel:BuildRequires:	kernel-headers}
 BuildRequires:	%{kgcc_package}
 %{!?_without_dist_kernel:%requires_releq_kernel_up}
 Requires(post,postun):	/sbin/depmod
@@ -84,7 +84,7 @@ install -d $RPM_BUILD_ROOT/lib/modules/%{_kernel_ver}smp/misc
 install %{_orig_name}-smp.o $RPM_BUILD_ROOT/lib/modules/%{_kernel_ver}smp/misc/%{_orig_name}.o
 install %{_orig_name}.o $RPM_BUILD_ROOT/lib/modules/%{_kernel_ver}/misc/%{_orig_name}.o
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
 %post

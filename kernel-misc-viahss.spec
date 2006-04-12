@@ -4,18 +4,18 @@
 %bcond_without	smp		# don't build SMP module
 %bcond_with	verbose		# verbose build (V=1)
 
+%define		_rel	0.1
 Summary:	VIA High Speed Serial
 Summary(pl):	VIA High Speed Serial
 Name:		kernel-misc-viahss
 Version:	0.92
-%define		_rel	0.1
 Release:	%{_rel}@%{_kernel_ver_str}
 License:	GPL
 Group:		Base/Kernel
 Source0:	http://www.kati.fi/viahss/viahss-%{version}.tar.gz
 # Source0-md5:	a63cdb34bf50676f232192b570dd7c37
 URL:		http://www.kati.fi/viahss/
-%{?with_dist_kernel:BuildRequires:	kernel-module-build >= 2.6.7}
+%{?with_dist_kernel:BuildRequires:	kernel-module-build >= 3:2.6.7}
 BuildRequires:	rpmbuild(macros) >= 1.217
 Requires(post,postun):	/sbin/depmod
 %if %{with dist_kernel}

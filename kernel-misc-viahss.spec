@@ -6,7 +6,7 @@
 
 %define		_rel	0.1
 Summary:	VIA High Speed Serial
-Summary(pl):	VIA High Speed Serial
+Summary(pl.UTF-8):   VIA High Speed Serial
 Name:		kernel-misc-viahss
 Version:	0.92
 Release:	%{_rel}@%{_kernel_ver_str}
@@ -33,17 +33,17 @@ serial port at 230400 bit/s so that you can get the full 128000 bit/s
 from ISDN-TA. The module has been tested with both 686A and 686B
 chipsets.
 
-%description -l pl
-VIA High Speed Serial to ma≥y modu≥ j±dra (1kB) w≥±czaj±cy szybkie
-tryby pracy portu szeregowego wbudowanego w p≥yty g≥Ûwne z mostkiem
-po≥udniowym VIA VT82C686A lub VT82C686B. Przy pomocy tego modu≥u moøna
-uøywaÊ portu szeregowego z prÍdko∂ci± 230400 bit/s, co pozwala na
-uzyskanie pe≥nego transferu 128000 bit/s w komunikacji z ISDN-TA. Ten
-modu≥ by≥ testowany z uk≥adami zarÛwno 686A jak i 686B.
+%description -l pl.UTF-8
+VIA High Speed Serial to ma≈Çy modu≈Ç jƒÖdra (1kB) w≈ÇƒÖczajƒÖcy szybkie
+tryby pracy portu szeregowego wbudowanego w p≈Çyty g≈Ç√≥wne z mostkiem
+po≈Çudniowym VIA VT82C686A lub VT82C686B. Przy pomocy tego modu≈Çu mo≈ºna
+u≈ºywaƒá portu szeregowego z prƒôdko≈õciƒÖ 230400 bit/s, co pozwala na
+uzyskanie pe≈Çnego transferu 128000 bit/s w komunikacji z ISDN-TA. Ten
+modu≈Ç by≈Ç testowany z uk≈Çadami zar√≥wno 686A jak i 686B.
 
 %package -n kernel-smp-misc-viahss
 Summary:	Linux SMP driver for VIA High Speed Serial
-Summary(pl):	Sterownik dla Linuksa SMP do VIA High Speed Serial
+Summary(pl.UTF-8):   Sterownik dla Linuksa SMP do VIA High Speed Serial
 Release:	%{_rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 Requires(post,postun):	/sbin/depmod
@@ -60,13 +60,13 @@ serial port at 230400 bit/s so that you can get the full 128000 bit/s
 from ISDN-TA. The module has been tested with both 686A and 686B
 chipsets.
 
-%description -n kernel-smp-misc-viahss -l pl
-VIA High Speed Serial SMP to ma≥y modu≥ j±dra SMP (1kB) w≥±czaj±cy
-szybkie tryby pracy portu szeregowego wbudowanego w p≥yty g≥Ûwne z
-mostkiem po≥udniowym VIA VT82C686A lub VT82C686B. Przy pomocy tego
-modu≥u moøna uøywaÊ portu szeregowego z prÍdko∂ci± 230400 bit/s, co
-pozwala na uzyskanie pe≥nego transferu 128000 bit/s w komunikacji z
-ISDN-TA. Ten modu≥ by≥ testowany z uk≥adami zarÛwno 686A jak i 686B.
+%description -n kernel-smp-misc-viahss -l pl.UTF-8
+VIA High Speed Serial SMP to ma≈Çy modu≈Ç jƒÖdra SMP (1kB) w≈ÇƒÖczajƒÖcy
+szybkie tryby pracy portu szeregowego wbudowanego w p≈Çyty g≈Ç√≥wne z
+mostkiem po≈Çudniowym VIA VT82C686A lub VT82C686B. Przy pomocy tego
+modu≈Çu mo≈ºna u≈ºywaƒá portu szeregowego z prƒôdko≈õciƒÖ 230400 bit/s, co
+pozwala na uzyskanie pe≈Çnego transferu 128000 bit/s w komunikacji z
+ISDN-TA. Ten modu≈Ç by≈Ç testowany z uk≈Çadami zar√≥wno 686A jak i 686B.
 
 %prep
 %setup -q -n viahss-%{version}

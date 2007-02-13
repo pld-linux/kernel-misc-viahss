@@ -6,7 +6,7 @@
 
 %define		_rel	0.1
 Summary:	VIA High Speed Serial
-Summary(pl.UTF-8):   VIA High Speed Serial
+Summary(pl.UTF-8):	VIA High Speed Serial
 Name:		kernel-misc-viahss
 Version:	0.92
 Release:	%{_rel}@%{_kernel_ver_str}
@@ -43,7 +43,7 @@ moduł był testowany z układami zarówno 686A jak i 686B.
 
 %package -n kernel-smp-misc-viahss
 Summary:	Linux SMP driver for VIA High Speed Serial
-Summary(pl.UTF-8):   Sterownik dla Linuksa SMP do VIA High Speed Serial
+Summary(pl.UTF-8):	Sterownik dla Linuksa SMP do VIA High Speed Serial
 Release:	%{_rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 Requires(post,postun):	/sbin/depmod
